@@ -122,6 +122,8 @@ cartas_ordenadas = ordenar_en_paralelo(cartas, 4)
 
 # Display the first 10 sorted cards
 print(cartas_ordenadas[:10])
-
+# Conclusion
 The execution time of this parallel program is 31 seconds compared to the sequential program which was 15 seconds.
+Although parallel programs can offer significant performance improvements, the overhead associated with creating and managing processes, splitting data, and performing multiple sorts can make parallelization slower than the sequential solution. In this case, the overhead of parallelization, inefficient workload distribution, and the final sort operation after parallelization could explain why the parallel program takes longer than the sequential one.
+
 
